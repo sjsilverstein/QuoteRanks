@@ -1,0 +1,10 @@
+<div *ngIf="author">
+  <div class="row">
+    <h4>Provide a Quote by {{author.name}}</h4>
+  </div>
+    <form (submit)="newQuoteForm()" method="PUT">
+        <p *ngIf="errorL">{{errorL['errors']['quotes']['errors']['content']['message']}}</p>
+        Quote: <input type="text" name="newQuote.content" [(ngModel)]="newQuote.content">
+        <input type="submit" value="Add Quote">
+    </form>
+</div>

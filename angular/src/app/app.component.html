@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="row text-align-center">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h1>Welcome to {{ title }}!</h1>
+    </div>
+    <div class="col-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-1">
+        <button [routerLink]="['/']">Home</button>
+    </div>
+    <div class="col-2">
+        <button [routerLink]="['/newAuthor']">Add Author</button>
+    </div>
+  </div>
+  <br> 
+  <router-outlet></router-outlet>
+  

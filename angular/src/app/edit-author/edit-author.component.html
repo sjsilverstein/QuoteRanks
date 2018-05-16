@@ -1,0 +1,6 @@
+<form (submit)="editAuthorForm()" method="PUT" *ngIf="author">
+    <h4>Edit: {{author.name}}</h4>
+    name: <input type="text" name="author.name" [(ngModel)]="author.name">
+    <input type="submit" value="Make Edits">
+</form>
+  
